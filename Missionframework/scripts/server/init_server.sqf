@@ -9,6 +9,7 @@ troup_transport = compileFinal preprocessFileLineNumbers "scripts\server\ai\trou
 
 // Battlegroup
 spawn_air = compileFinal preprocessFileLineNumbers "scripts\server\battlegroup\spawn_air.sqf";
+spawn_boat = compileFinal preprocessFileLineNumbers "scripts\server\battlegroup\spawn_boat.sqf";
 spawn_battlegroup = compileFinal preprocessFileLineNumbers "scripts\server\battlegroup\spawn_battlegroup.sqf";
 
 // Game
@@ -24,6 +25,7 @@ send_paratroopers = compileFinal preprocessFileLineNumbers "scripts\server\patro
 fob_hunting = compileFinal preprocessFileLineNumbers "scripts\server\secondary\fob_hunting.sqf";
 convoy_hijack = compileFinal preprocessFileLineNumbers "scripts\server\secondary\convoy_hijack.sqf";
 search_and_rescue = compileFinal preprocessFileLineNumbers "scripts\server\secondary\search_and_rescue.sqf";
+civ_supplies = compileFinal preprocessFileLineNumbers "scripts\server\secondary\civ_supplies.sqf";
 
 // Sector
 attack_in_progress_fob = compileFinal preprocessFileLineNumbers "scripts\server\sector\attack_in_progress_fob.sqf";
@@ -86,6 +88,15 @@ switch (KP_liberation_preset_opfor) do {
             "scripts\fob_templates\unsung\template3.sqf",
             "scripts\fob_templates\unsung\template4.sqf",
             "scripts\fob_templates\unsung\template5.sqf"
+        ];
+    };
+    case 21: {
+        KPLIB_fob_templates = [
+            "scripts\fob_templates\vn\template1.sqf",
+            "scripts\fob_templates\vn\template2.sqf",
+            "scripts\fob_templates\vn\template3.sqf",
+            "scripts\fob_templates\vn\template4.sqf"
+            "scripts\fob_templates\vn\template5.sqf"
         ];
     };
     default {

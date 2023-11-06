@@ -51,7 +51,9 @@ KP_liberation_medical_vehicles = [
     "uns_ch47a_medevac",
     "uns_H13_medevac_CAV",
     "uns_M577_amb",
-    "uns_uh1D_med"
+    "uns_uh1D_med",
+    "vn_b_air_uh1d_01_01",
+    "vn_b_wheeled_m54_repair_airport"
 ];
 
 // Building classnames which also function as ACE medical facilities.
@@ -60,6 +62,15 @@ KP_liberation_medical_facilities = [
     "Land_Medevac_HQ_V1_F",
     "LAND_uns_army_med",
     "LAND_uns_tent3mash",
+    "Land_vn_tent_mash_01_01",
+    "Land_vn_tent_mash_01_02",
+    "Land_vn_tent_mash_01_03",
+    "Land_vn_tent_mash_01_04",
+    "Land_vn_tent_mash_01",
+    "Land_vn_tent_mash_02_01",
+    "Land_vn_tent_mash_02_02",
+    "Land_vn_tent_mash_02_03",
+    "Land_vn_tent_mash_02_04",
     "uns_mash_main",
     "uns_mash",
     "US_Tent_2",
@@ -108,8 +119,9 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 27 = CUP Takistani Army
 28 = SFP (Woodland)
 29 = SFP (Desert)
-30 = LDF (Contact DLC) */
-KP_liberation_preset_blufor = 0;
+30 = LDF (Contact DLC)
+31 = SOGPF */
+KP_liberation_preset_blufor = 31;
 
 /* OPFOR preset:
 0  = Custom (default vanilla CSAT)
@@ -132,8 +144,9 @@ KP_liberation_preset_blufor = 0;
 17 = CUP Armed Forces of the Russian Federation (Modern MSV)
 18 = CUP Chernarus Defense Force
 19 = CUP British Armed Forces (Desert)
-20 = CUP British Armed Forces (Woodland) */
-KP_liberation_preset_opfor = 0;
+20 = CUP British Armed Forces (Woodland)
+21 = SOGPF */
+KP_liberation_preset_opfor = 21;
 
 /* Resistance preset:
 0  = Custom (default vanilla FIA)
@@ -144,8 +157,9 @@ KP_liberation_preset_opfor = 0;
 5  = Germany (Global Mobilization)
 6  = Unsung
 7  = CUP Takistani Locals
-8  = CUP National Party of Chernarus */
-KP_liberation_preset_resistance = 0;
+8  = CUP National Party of Chernarus
+9  = SOGPF */
+KP_liberation_preset_resistance = 9;
 
 /* Civilians preset:
 0  = Custom (default vanilla)
@@ -155,8 +169,9 @@ KP_liberation_preset_resistance = 0;
 4  = Germany (Global Mobilization)
 5  = Unsung
 6  = CUP Takistani Civilians
-7  = CUP Chernarussian Civilians */
-KP_liberation_preset_civilians = 0;
+7  = CUP Chernarussian Civilians
+8  = SOGPF */
+KP_liberation_preset_civilians = 8;
 
 /* Which arsenal preset should be used?
 0  = Use the default blacklist method (defined below)
@@ -175,14 +190,15 @@ KP_liberation_preset_civilians = 0;
 13 = CSAT Hex arsenal preset
 14 = CSAT Green Hex arsenal preset
 15 = AAF arsenal preset
-16 = LDF arsenal preset */
-KP_liberation_arsenal = 0;
+16 = LDF arsenal preset
+17 = SOGPF arsenal preset */
+KP_liberation_arsenal = 17;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine. */
-KP_liberation_fuel_neutral = 180;
+KP_liberation_fuel_neutral = 120;
 // Time in minutes till a full tank depletes whilst the vehicle is driving below max speed.
-KP_liberation_fuel_normal = 90;
+KP_liberation_fuel_normal = 75;
 // Time in minutes till a full tank depletes whilst the vehicle is driving at max speed.
 KP_liberation_fuel_max = 45;
 
@@ -204,14 +220,15 @@ GRLIB_color_enemy_bright = "ColorRED";                                  // Enemy
 
 GRLIB_fob_range = 125;                                                  // Build range around the main FOB building.
 GRLIB_halo_altitude = 2500;                                             // Altitude in metres for the HALO jump.
-GRLIB_secondary_missions_costs = [15, 10, 8];                           // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
+GRLIB_secondary_missions_costs = [15, 10, 8, 5];                        // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR, Humanitarian Aid].
+KP_liberation_civ_supplies_impact = 5;									// The percentage increase received when completing a Humanitarian Aid secondary objective
 GRLIB_secondary_objective_impact = 0.6;                                 // The percentage impact against enemy combat readiness for a successful FOB hunt.
 GRLIB_recycling_percentage = 0.5;                                       // Percentage of resources you get back from recycling.
 KP_liberation_production_interval = 30;                                 // Time in minutes until a production process is finished, when resources multiplier is set to 1.
 
 GRLIB_sector_size = 1000;                                               // Range to activate a sector.
 GRLIB_capture_size = 175;                                               // Range to capture a sector.
-GRLIB_defended_buildingpos_part = 0.4;                                  // Multiplier for defenders in buildings.
+GRLIB_defended_buildingpos_part = 0.3;                                  // Multiplier for defenders in buildings.
 GRLIB_battlegroup_size = 6;                                             // Size of enemy battlegroups.
 GRLIB_vulnerability_timer = 1200;                                       // Time in seconds how long a captured sector is vulnerable to enemy troops.
 GRLIB_radiotower_size = 2500;                                           // Radio Tower scanning range.
@@ -225,13 +242,13 @@ GRLIB_sector_cap = 180;                                                 // Cap f
 GRLIB_battlegroup_cap = 150;                                            // Cap for enemy battlegroups.
 GRLIB_patrol_cap = 150;                                                 // Cap for enemy patrols.
 
-KP_liberation_cr_kill_penalty = 5;                                      // Civil Reputation penalty for killing a civilian.
+KP_liberation_cr_kill_penalty = 6;                                      // Civil Reputation penalty for killing a civilian.
 KP_liberation_cr_building_penalty = 3;                                  // Civil Reputation penalty for destroying/damaging a building.
 KP_liberation_cr_vehicle_penalty = 2;                                   // Civil Reputation penalty for stealing a civilian vehicle.
-KP_liberation_cr_resistance_penalty = 3;                                // Civil Reputation penalty for killing a friendly resistance soldier.
+KP_liberation_cr_resistance_penalty = 5;                                // Civil Reputation penalty for killing a friendly resistance soldier.
 KP_liberation_cr_sector_gain = 5;                                       // Civil Reputation gain for liberate a sector.
-KP_liberation_cr_wounded_chance = 35;                                   // Chance (0-100) that there are wounded civilians right after capturing a sector.
-KP_liberation_cr_wounded_gain = 2;                                      // Civil Reputation gain for providing medical assistance for wounded civilians.
+KP_liberation_cr_wounded_chance = 40;                                   // Chance (0-100) that there are wounded civilians right after capturing a sector.
+KP_liberation_cr_wounded_gain = 3;                                      // Civil Reputation gain for providing medical assistance for wounded civilians.
 
 KP_liberation_civinfo_min = 5400;                                       // Civil Informant minimum spawn time. (seconds)
 KP_liberation_civinfo_max = 10800;                                      // Civil Informant maximum spawn time. (seconds)
@@ -253,7 +270,8 @@ KP_liberation_resistance_ambush_chance = 25;                            // Chanc
 // Array of worldName values.
 // When playing on this map, it'll create a clearance (remove terrain objects) in a 15m radius around the battlegroup/reinforcements spawnpoint.
 KP_liberation_battlegroup_clearance = [
-    "song_bin_tanh"
+    "song_bin_tanh",
+    "Cam_Lao_Nam"
 ];
 
 /* Slot independent commander action access.
@@ -281,7 +299,7 @@ KPLIB_radioTowerClassnames = [
 ];
 
 /* - Default arsenal blacklist method.
-Useless if you're using anything other than "kp_liberation_arsenal = 0;" above. A whitelisted arsenal is always more performance friendly then a blacklisted arsenal.
+Useless if you're using anything other than "kp_liberation_arsenal = 17;" above. A whitelisted arsenal is always more performance friendly then a blacklisted arsenal.
 REMEMBER: All static turret and UAV bags should be defined here, to stop players from exploiting free resources via the virtual arsenal.    */
 blacklisted_from_arsenal = [
     "B_AA_01_weapon_F",
@@ -707,7 +725,11 @@ KPLIB_transportConfigs = [
     ["uns_m37b1", -5, [0,-1.8,0.15]],
     ["uns_nvatruck_mg", -5, [0,-1.05,0.8], [0,-2.75,0.8]],
     ["uns_nvatruck_open", -5, [0,-1.05,0.8], [0,-2.75,0.8]],
-    ["uns_nvatruck", -5, [0,-1.05,0.8], [0,-2.75,0.8]]
+    ["uns_nvatruck", -5, [0,-1.05,0.8], [0,-2.75,0.8]],
+    ["vn_b_wheeled_m54_01", -5, [0,-0.8,0.18], [0,-2.5,0.18]],
+    ["vn_b_wheeled_m54_02", -5, [0,-0.8,0.18], [0,-2.5,0.18]],
+    ["vn_o_wheeled_z157_01", -5.5, [0,-1.2,0.18], [0,-2.9,0.18]],
+    ["vn_b_air_ch47_03_01", -8, [0,3.9,-2.0], [0,2.2,-2.0], [0,0.5,-2.0], [0,-1.2,-2.0]]
 ];
 
 /* Various other settings.
@@ -751,7 +773,8 @@ KPLIB_aiResupplySources = [
     "sfp_tgb40_ammo",
     "uns_M113_ENG",
     "uns_M35A2_ammo",
-    "uns_motorpool1_repair"
+    "uns_motorpool1_repair",
+    "vn_b_wheeled_m54_ammo"
 ];
 
 // Everything that can resupply other vehicles.
@@ -794,7 +817,8 @@ vehicle_repair_sources = [
     "UNS_Hanger_repair",
     "uns_M113_ENG",
     "uns_M35A2_repair",
-    "uns_motorpool1_repair"
+    "uns_motorpool1_repair",
+    "vn_b_wheeled_m54_repair"
 ];
 
 vehicle_rearm_sources = [
@@ -835,7 +859,8 @@ vehicle_rearm_sources = [
     "rhsusf_M977A4_AMMO_usarmy_wd",
     "sfp_tgb40_ammo",
     "uns_M113_ENG",
-    "uns_M35A2_ammo"
+    "uns_M35A2_ammo",
+    "vn_b_wheeled_m54_ammo"
 ];
 
 vehicle_refuel_sources = [
@@ -877,7 +902,8 @@ vehicle_refuel_sources = [
     "sfp_tgb40_fuel",
     "uns_M113_ENG",
     "uns_M35A2_fuel",
-    "uns_M35A2_fueltanker"
+    "uns_M35A2_fueltanker",
+    "vn_b_wheeled_m54_fuel"
 ];
 
 // Classnames of boats, so they can be built on water.
@@ -906,7 +932,14 @@ boats_names = [
     "uns_PBR_M10",
     "uns_pbr_mk18",
     "uns_pbr",
-    "UNS_Zodiac_W"
+    "UNS_Zodiac_W",
+    "vn_b_boat_05_01",
+    "vn_b_boat_10_01",
+    "vn_b_boat_11_01",
+    "vn_b_boat_12_01",
+    "vn_b_boat_13_01",
+    "vn_b_boat_05_01",
+    "vn_b_boat_06_01"
 ];
 
 // Classnames of artillery vehicles, which should be added to the support module
@@ -1029,7 +1062,9 @@ KP_liberation_suppMod_artyVeh = [
     "uns_M2_60mm_mortar_pvp",
     "uns_M2_60mm_mortar",
     "uns_M30_107mm_mortar",
-    "uns_Type55_mortar"
+    "uns_Type55_mortar",
+    "vn_b_army_static_mortar_m2",
+    "vn_b_army_static_mortar_m29"
 ];
 
 // Objects which are spawned as intel objects for pickup

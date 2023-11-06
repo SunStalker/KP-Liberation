@@ -19,7 +19,7 @@ if !(_spawn_marker isEqualTo "") then {
     [_spawn_marker] remoteExec ["remote_call_battlegroup"];
 
     if (worldName in KP_liberation_battlegroup_clearance) then {
-        [markerPos _spawn_marker, 15] call KPLIB_fnc_createClearance;
+        [markerPos _spawn_marker, 20] call KPLIB_fnc_createClearance;
     };
 
     if (_infOnly) then {
@@ -66,6 +66,10 @@ if !(_spawn_marker isEqualTo "") then {
                 };
             };
         } forEach _selected_opfor_battlegroup;
+
+        if (GRLIB_csat_aggressivity > 0.5) then {
+            [[markerPos _spawn_marker] call KPLIB_fnc_getNearestBluforObjective] spawn spawn_boat;
+        };
 
         if (GRLIB_csat_aggressivity > 0.9) then {
             [[markerPos _spawn_marker] call KPLIB_fnc_getNearestBluforObjective] spawn spawn_air;
