@@ -95,7 +95,7 @@ switch (KP_liberation_preset_opfor) do {
             "scripts\fob_templates\vn\template1.sqf",
             "scripts\fob_templates\vn\template2.sqf",
             "scripts\fob_templates\vn\template3.sqf",
-            "scripts\fob_templates\vn\template4.sqf"
+            "scripts\fob_templates\vn\template4.sqf",
             "scripts\fob_templates\vn\template5.sqf"
         ];
     };
