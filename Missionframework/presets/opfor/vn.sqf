@@ -17,8 +17,8 @@ opfor_grenadier = "vn_o_men_nva_07";
 opfor_machinegunner = "vn_o_men_nva_11";
 opfor_heavygunner = "vn_o_men_nva_11";
 opfor_marksman = "vn_o_men_nva_10";
-opfor_sharpshooter = "vn_o_men_nva_10";
-opfor_sniper = "vn_o_men_nva_10";
+opfor_sharpshooter = "vn_o_men_nva_45";
+opfor_sniper = "vn_o_men_nva_47";
 opfor_at = "vn_o_men_nva_14";
 opfor_aa = "vn_o_men_nva_43";
 opfor_medic = "vn_o_men_nva_08";
@@ -33,8 +33,8 @@ opfor_transport_truck = "vn_o_wheeled_z157_01";
 opfor_ammobox_transport = "vn_o_wheeled_z157_02";
 opfor_fuel_truck = "vn_o_wheeled_z157_fuel";
 opfor_ammo_truck = "vn_o_wheeled_z157_ammo";
-opfor_fuel_container = "Land_Pod_Heli_Transport_04_fuel_F";
-opfor_ammo_container = "Land_Pod_Heli_Transport_04_ammo_F";
+opfor_fuel_container = "Land_vn_b_prop_fueldrum_02";
+opfor_ammo_container = "B_Slingload_01_Ammo_F";
 opfor_flag = "vn_flag_pavn";
 
 /* Adding a value to these arrays below will add them to a one out of however many in the array, random pick chance.
