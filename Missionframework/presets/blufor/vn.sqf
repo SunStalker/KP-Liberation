@@ -13,7 +13,7 @@
     Or not, just don't try!
 */
 FOB_typename = "Land_vn_hootch_02_03";                                  // This is the main FOB HQ building.
-FOB_box_typename = "B_Slingload_01_Cargo_F";                            // This is the FOB as a container. (Land_vn_cargo20_military_green_f could be usable when it is slingloadable.
+FOB_box_typename = "vn_us_komex_medium_02";                             // This is the FOB as a container.
 FOB_truck_typename = "vn_b_wheeled_m54_03";                             // This is the FOB as a vehicle.
 Arsenal_typename = "Land_vn_us_weapons_stack2";                         // This is the virtual arsenal as portable supply crates.
 Respawn_truck_typename = "vn_b_armor_m577_01";                 // This is the mobile respawn (and medical) truck. (armored m113 variant, hence ammo cost of 40, Dirt Ranger Ambulance could also work)
