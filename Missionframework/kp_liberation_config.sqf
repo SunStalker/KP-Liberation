@@ -1064,7 +1064,8 @@ KP_liberation_suppMod_artyVeh = [
     "uns_M30_107mm_mortar",
     "uns_Type55_mortar",
     "vn_b_army_static_mortar_m2",
-    "vn_b_army_static_mortar_m29"
+    "vn_b_army_static_mortar_m29",
+    "vn_b_army_static_m101_02"
 ];
 
 // Objects which are spawned as intel objects for pickup
