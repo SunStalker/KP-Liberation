@@ -76,11 +76,11 @@ opfor_vehicles = [
     "vn_o_wheeled_btr40_mg_03",
     "vn_o_wheeled_btr40_mg_03",
     "vn_o_pt76b_01",
-    "vn_o_armor_m113_acav_01",
+    "vn_o_wheeled_btr40_mg_06",
     "vn_o_pt76a_01",
     "vn_o_armor_type63_01_nva65",
     "vn_o_armor_type63_01",
-    "vn_o_armor_m41_01",
+    "vn_o_armor_ot54_01",
     "vn_o_armor_t54b_01"
 ];
 
