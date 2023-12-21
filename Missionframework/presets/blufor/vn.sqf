@@ -157,9 +157,9 @@ static_vehicles = [
     ["vn_b_navy_static_l60mk3",75,75,0],
     ["vn_b_army_static_m40a1rr",35,50,0],
     ["SPE_57mm_M1",35,50,0],
-    ["vn_b_army_static_m101_1",50,75,0],                                 //M101 105mm Anti-tank gun
+    ["vn_b_army_static_m101_01",50,75,0],                                 // M101 105mm Howitzer
     ["vn_b_static_tow",30,75,0],                                        // BGM71 TOW
-    ["vn_b_army_static_m101_02",50,850,0]                               // M101 105mm Howitzer
+    ["vn_b_army_static_m101_02",50,85,0]
 ];
 
 buildings = [
