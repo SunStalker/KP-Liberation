@@ -13,10 +13,10 @@
     Or not, just don't try!
 */
 FOB_typename = "Land_vn_hootch_02_03";                                  // This is the main FOB HQ building.
-FOB_box_typename = "B_Slingload_01_Cargo_F";                            // This is the FOB as a container. (Land_vn_cargo20_military_green_f could be usable when it is slingloadable.
+FOB_box_typename = "vn_us_komex_medium_02";                             // This is the FOB as a container.
 FOB_truck_typename = "vn_b_wheeled_m54_03";                             // This is the FOB as a vehicle.
 Arsenal_typename = "Land_vn_us_weapons_stack2";                         // This is the virtual arsenal as portable supply crates.
-Respawn_truck_typename = "vn_b_wheeled_m54_01_airport";                 // This is the mobile respawn (and medical) truck. (Not medical or optimal but at least less emersion breaking that HEMTT)
+Respawn_truck_typename = "vn_b_armor_m577_01";                 // This is the mobile respawn (and medical) truck. (armored m113 variant, hence ammo cost of 40, Dirt Ranger Ambulance could also work)
 huron_typename = "vn_b_air_ch34_01_01";                                 // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
 crewman_classname = "vn_b_men_army_14";                                 // This defines the crew for vehicles.
 pilot_classname = "vn_b_men_aircrew_05";                                // This defines the pilot for helicopters.
@@ -26,7 +26,7 @@ KP_liberation_truck_classname = "vn_b_wheeled_m54_01";                  // These
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";     // A small storage area for resources. (Land_vn_hootch_01_wall)
 KP_liberation_large_storage_building = "ContainmentArea_01_sand_F";     // A large storage area for resources. (Land_vn_barracks_04_wall)
 KP_liberation_recycle_building = "Land_vn_hootch_01_03";                // The building defined to unlock FOB recycling functionality.
-KP_liberation_air_vehicle_building = "Land_vn_radar_small_f";           // The building defined to unlock FOB air vehicle functionality.
+KP_liberation_air_vehicle_building = "Land_vn_mobileradar_01_radar_f";  // The building defined to unlock FOB air vehicle functionality.
 KP_liberation_heli_slot_building = "Land_vn_b_helipad_01";              // The helipad used to increase the GLOBAL rotary-wing cap.
 KP_liberation_plane_slot_building = "Land_vn_usaf_hangar_02";           // The hangar used to increase the GLOBAL fixed-wing cap.
 KP_liberation_supply_crate = "Land_FoodSacks_01_cargo_brown_F";         // This defines the supply crates, as in resources.
@@ -91,11 +91,12 @@ light_vehicles = [
 ];
 
 heavy_vehicles = [
-    ["vn_b_armor_m113_acav_04",100,40,125],
-    ["vn_b_armor_m113_acav_02",100,40,125],
-    ["vn_b_armor_m113_acav_01",100,40,125],
-    ["vn_b_armor_m113_acav_06",100,125,125],
-    ["vn_b_armor_m113_acav_05",100,60,125],
+    ["vn_b_armor_m113_01",110,20,125],                                 // M113A1 Transport (M2) 21pax m2-Turret
+    ["vn_b_armor_m113_acav_04",100,45,125],                                 // M113A1 ACAV (M134) 18pax m134-armored-Turret 2xM60
+    ["vn_b_armor_m113_acav_02",100,35,125],                                 // M113A1 ACAV (M1919)) 18pax Twin-m1919-Turret 2xM60	
+    ["vn_b_armor_m113_acav_01",100,35,125],                                  // M113A1 ACAV (M2) 18pax m2-armored-Turret 2xM60
+    ["vn_b_armor_m113_acav_06",100,125,125],                                  // M113A1 ACAV (M2/ M40) 16pax m2-armored-Turret 1xM40 1xM60
+    ["vn_b_armor_m113_acav_05",100,60,125],                                  // M113A1 ACAV (M2) 18pax m2-armored-Turret 2xM60
     ["vn_b_armor_m125_01",100,175,125],
     ["vn_b_armor_m132_01",100,100,125],
     ["SPE_M4A1_75",300,250,300],
@@ -107,28 +108,32 @@ heavy_vehicles = [
 ];
 
 air_vehicles = [
-    ["vn_b_air_oh6a_01",100,5,100],                                    // OH-6A Cayuse
-    ["vn_b_air_oh6a_06",150,150,200],                                   // OH-6A Cayuse (Gunship/APERS)
-    ["vn_b_air_oh6a_05",150,150,200],                                   // OH-6A Cayuse (Gunship/CAS)
-    ["vn_b_air_ch34_03_01",200,10,250],                                 // UH-34D Seahorse (M60 x2)
-    ["vn_b_air_ch34_04_03",200,200,250],                                // UH-34 Stinger (APERS)
-    ["vn_b_air_ch34_04_02",200,200,250],                                // UH-34 Stinger (CAS)
-    ["vn_b_air_uh1d_02_01",125,10,125],                                 // UH-1D Iroquois Slick (Army)
-    ["vn_b_air_uh1c_03_01",200,150,250],
-    ["vn_b_air_uh1c_01_01",200,150,250],                                // UH-1C Iroquois Hog (Army)
-    ["vn_b_air_uh1c_06_01",200,150,250],
-    ["vn_b_air_uh1c_05_01",200,150,250],
-    ["vn_b_air_uh1e_02_04",225,200,250],
-    ["vn_b_air_ch47_03_01",250,0,300],
-    ["vn_b_air_ch47_01_01",250,10,300],
-    ["vn_b_air_ach47_04_01",350,300,400],
-    ["vn_b_air_ach47_03_01",350,300,400],
+    ["vn_b_air_oh6a_01",100,5,100],                                     // OH-6A Cayuse Slingload:0.5t
+    ["vn_b_air_oh6a_06",150,150,200],                                   // OH-6A Cayuse (Gunship/APERS) Slingload:0.5t
+    ["vn_b_air_oh6a_05",150,150,200],                                   // OH-6A Cayuse (Gunship/CAS) Slingload:0.5t
+    ["vn_b_air_ch34_03_01",250,10,250],                                 // UH-34D Seahorse (M60 x2) 12pax Slingload:15t
+    ["vn_b_air_ch34_04_03",200,200,250],                                // UH-34 Stinger (APERS)  6pax Slingload:0.5t
+    ["vn_b_air_ch34_04_02",200,200,250],                                // UH-34 Stinger (CAS)  6pax Slingload:0.5t
+    ["vn_b_air_uh1d_02_01",130,10,130],                                 // UH-1D Iroquois Slick (Army) 15pax 2xM60
+    ["vn_b_air_uh1b_01_03",110,0,110],                                  // UH-1B Iroquois Dustoff (USAF Camo) 9pax no guns,
+    ["vn_b_air_uh1f_01_03",120,10,120],                                 // UH-1F Iroquois Slick 11pax 2xM60
+    ["vn_b_air_uh1c_03_01",190,150,240],                                // UH-1P Iroquois Hornet 6pax 2xM60+FFAR
+    ["vn_b_air_uh1c_01_01",200,150,250],                                // UH-1C Iroquois Hog (Army) 8pax 2xM60+FFAR
+    ["vn_b_air_uh1c_06_01",190,100,240],                                // UH-1C Iroquois ARA 6pax FFAR
+    ["vn_b_air_uh1c_05_01",190,200,250],                                // UH-1C Iroquois Heavy Hog (Army)) 4pax FFAR 40mmTurret
+    ["vn_b_air_uh1e_02_04",225,250,250],                                // UH-1E Iroquois Heavy Gunship 6Pax 2xM60 FFAR TwinM60Turret m60Quad
+    ["vn_b_air_ch47_03_01",250,10,300],                                   // CH-47A Chinook (Cargo/ Army) 6Pax NO Slingload
+    ["vn_b_air_ch47_02_01",250,0,300],                                   // CH-47A Chinook (Medevac/ Army) 22Pax NO Slingload
+    ["vn_b_air_ch47_01_01",300,15,300],                                   // CH-47A Chinook (M60/ Army) 35pax Slingload:15t
+    ["vn_b_air_ach47_04_01",350,300,400],                                // ACH-47A Guns-A-Go-Go (APERS)
+    ["vn_b_air_ach47_03_01",350,300,400],                                // ACH-47A Guns-A-Go-Go (AT)
     ["vn_b_air_ah1g_02",300,350,600],                                   // AH-1G Cobra (APERS)
     ["vn_b_air_ah1g_03",300,350,600],                                   // AH-1G Cobra (AT)
     ["vn_b_air_ah1g_09",300,350,600],
-    ["vn_b_air_f100d_hcas",450,350,800],
-    ["vn_b_air_f100d_hbmb",450,350,800],
-    ["vn_b_air_f100d_cap",450,350,800],
+    ["vn_b_air_f100d_cas",450,300,800],                                 // E100d (CAS) FFAR 2x750lb Napalm
+    ["vn_b_air_f100d_hcas",450,350,800],                                // E100d (HCAS) 6xMk82-500lb 2x500lb Napalm
+    ["vn_b_air_f100d_hbmb",450,350,800],                                // E100d (HBMB) 2xM117-750lb 2xMk83-1000lb
+    ["vn_b_air_f100d_cap",450,200,800],                                 // E100d (CAP) 4x Sidewinder-sAA
     ["vn_b_air_f4c_at",750,500,1000],                                  // F-4C Phantom II (AT)
     ["vn_b_air_f4c_cas",750,500,1000],                                 // F-4C Phantom II (CAS)
     ["vn_b_air_f4c_cap",750,500,1000]                                  // F-4C Phantom II (CAP)
@@ -142,9 +147,12 @@ static_vehicles = [
     ["vn_b_army_static_m1919a6",5,5,0],                               // M-1919A6 .30cal
     ["vn_b_army_static_m2_high",5,10,0],                               // M-2HB .50cal (High)
     ["vn_b_army_static_m2_low",5,10,0],                                // M-2HB .50cal (Low)
+    ["vn_b_army_static_m2_scoped_high",5,15,0],                        // M-2HB .50cal (High Scoped)
+    ["vn_b_army_static_m2_scoped_low",5,15,0],                         // M-2HB .50cal (Low Scoped)
     ["vn_b_army_static_mortar_m2",10,30,0],                             // M2 60mm Mortar
     ["vn_b_army_static_mortar_m29",10,40,0],                           // M29 81mm Mortar
     ["vn_b_army_static_m45",25,40,0],                                  // M-45 Quadmount
+    ["vn_b_army_static_mk18",5,40,0],                                  // 	Mk18 Mod 0
     ["vn_b_navy_static_l70mk2",45,20,0],
     ["vn_b_navy_static_l60mk3",75,75,0],
     ["vn_b_army_static_m40a1rr",35,50,0],
@@ -278,8 +286,33 @@ buildings = [
     ["Land_LampAirport_F",0,0,0],
     ["Land_PortableLight_double_F",0,0,0],
     ["Land_PortableLight_single_F",0,0,0],
-    ["Lantern_01_black_F",0,0,0],
+    ["Land_vn_us_common_lantern_01",0,0,0],
+    ["Land_vn_lampshabby_f_dir_close",0,0,0],
+    ["Land_vn_lampshabby_f_dir_far",0,0,0],
+    ["Land_vn_lampshabby_f_dir_normal",0,0,0],
+    ["Land_vn_lampshabby_f_4xdir_close",0,0,0],
+    ["Land_vn_lampshabby_f_4xdir_far",0,0,0],
+    ["Land_vn_lampshabby_f_4xdir_normal",0,0,0],
+    ["vn_b_prop_fmradio_01",0,0,0],	
     ["vn_b_prop_fmradio_01",0,0,0],
+    ["Land_vn_mutt_vysilacka",0,0,0],
+    ["vn_b_prop_prc77_01",0,0,0],
+    ["vn_b_prop_vrc12",0,0,0],
+    ["Land_vn_b_prop_mapstand_01",0,0,0],
+    ["Land_vn_b_prop_fueldrum_01",0,0,0],
+    ["Land_vn_bargate_f",0,0,0],
+    ["Land_vn_bulldozer_01_wreck_f",0,0,0],
+    ["vn_targetp_inf_f",0,0,0],
+    ["Land_vn_cncbarrier_stripes_f",0,0,0],
+    ["Land_vn_signm_warningmilareasmall_english_f",0,0,0],
+    ["Land_vn_sign_mines_f",0,0,0],
+    ["Land_vn_signt_stop",0,0,0],
+    ["Land_vn_sign_warningmilitaryarea_f",0,0,0],
+    ["vn_sign_so_01",0,0,0],
+    ["Land_vn_sign_t_donotenter_1",0,0,0],
+    ["Land_vn_sign_t_onewayleft",0,0,0],
+    ["Land_vn_sign_t_onewayright",0,0,0],
+    ["Land_vn_signm_warningmilitaryarea_english_f",0,0,0],
     ["vn_bar_01_campchair_01",0,0,0],
     ["vn_flag_101stab",0,0,0],
     ["vn_flag_1stcav",0,0,0],
@@ -298,7 +331,7 @@ buildings = [
 
 support_vehicles = [
     [Arsenal_typename,100,200,0],
-    [Respawn_truck_typename,200,0,100],
+    [Respawn_truck_typename,200,40,100],
     [FOB_box_typename,300,500,0],
     [FOB_truck_typename,300,500,75],
     [KP_liberation_small_storage_building,0,0,0],
@@ -419,5 +452,7 @@ elite_vehicles = [
     "vn_b_air_ah1g_01",
     "vn_b_air_f100d_at",
     "vn_b_air_f100d_cap",
-    "vn_b_air_f100d_cas"
+    "vn_b_air_f100d_cas",
+    "vn_b_air_f100d_hcas",
+	"vn_b_air_f100d_hbmb"
 ];
