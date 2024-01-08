@@ -48,7 +48,7 @@ private _objects_to_build = [
  private _objectives_to_build = [
      // Move all things which should be destroyed to accomplish the mission from the above to this array
 	[opfor_fuel_truck, [-11.00, -10.68, 0.00], 90.78],
-	[opfor_ammo_container, [7.92, 20.04, 0.00], 89.34],
+	[opfor_ammo_truck, [7.92, 20.04, 0.00], 89.34],
 	[opfor_ammo_truck, [13.80, 16.67, 0.00], 179.44],
 	[opfor_fuel_container, [-17.10, -3.80, 0.00], 269.86],
 	[opfor_fuel_container, [-15.31, -0.30, 0.00], 88.57],

@@ -19,7 +19,7 @@ private _objects_to_build = [
  private _objectives_to_build = [
      // Move all things which should be destroyed to accomplish the mission from the above to this array
 	[opfor_fuel_container, [7.67, 2.72, 0.00], 268.79],
-	[opfor_ammo_container, [-1.31, 6.07, 0.00], 89.61]
+	[opfor_fuel_truck, [-1.31, 6.07, 0.00], 89.61]
  ];
  
  private _defenders_to_build = [

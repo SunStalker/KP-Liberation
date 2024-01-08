@@ -60,7 +60,8 @@ militia_squad = [
     "vn_o_men_nva_08",
     "vn_o_men_nva_13",
     "vn_o_men_nva_05",
-    "vn_o_men_nva_14"
+    "vn_o_men_nva_14",
+    "vn_o_men_nva_43"
 ];
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry milita.
@@ -78,9 +79,10 @@ opfor_vehicles = [
     "vn_o_pt76b_01",
     "vn_o_armor_m113_acav_01",
     "vn_o_pt76a_01",
-    "vn_o_armor_type63_01_nva65",
+    "vn_o_armor_t54b_01",
     "vn_o_armor_type63_01",
     "vn_o_armor_m41_01",
+    "vn_o_armor_ot54_01",
     "vn_o_armor_t54b_01"
 ];
 
@@ -99,15 +101,10 @@ opfor_vehicles_low_intensity = [
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles = [
     "vn_o_wheeled_btr40_mg_03",
-    "vn_o_armor_type63_01_nva65",
-    "vn_o_armor_ot54_02",
+    "vn_o_armor_type63_01",
     "vn_o_armor_btr50pk_02",
     "vn_o_wheeled_z157_mg_02",
-    "vn_o_pt76b_01",
-    "vn_o_pt76a_01",
-    "vn_o_pt76b_01",
-    "vn_o_pt76a_01",
-    "vn_o_armor_ot54_02",
+    "vn_o_armor_ot54_01",
     "vn_o_armor_btr50pk_02",
     "vn_o_wheeled_z157_mg_02",
     "vn_o_pt76b_01",
@@ -115,14 +112,14 @@ opfor_battlegroup_vehicles = [
     "vn_o_pt76b_01",
     "vn_o_pt76a_01",
     "vn_o_wheeled_btr40_mg_03",
-    "vn_o_armor_type63_01_nva65",
-    "vn_o_armor_type63_01_nva65",
+    "vn_o_armor_type63_01",
+    "vn_o_armor_type63_01",
     "vn_o_armor_t54b_01",
     "vn_o_armor_t54b_01",
-    "vn_o_armor_ot54_02",
+    "vn_o_armor_ot54_01",
     "vn_o_wheeled_btr40_mg_03",
-    "vn_o_armor_type63_01_nva65",
-    "vn_o_armor_ot54_02",
+    "vn_o_armor_type63_01",
+    "vn_o_armor_ot54_01",
     "vn_o_wheeled_btr40_mg_03",
     "vn_o_air_mi2_04_05",
     "vn_o_air_mi2_04_02",
@@ -141,7 +138,7 @@ opfor_battlegroup_vehicles_low_intensity = [
     "vn_o_wheeled_btr40_mg_01",
     "vn_o_armor_btr50pk_02",
     "vn_o_armor_btr50pk_02",
-    "vn_o_armor_ot54_02",
+    "vn_o_armor_ot54_01",
     "vn_o_wheeled_btr40_mg_03",
     "vn_o_wheeled_btr40_mg_03",
     "vn_o_wheeled_btr40_mg_05",

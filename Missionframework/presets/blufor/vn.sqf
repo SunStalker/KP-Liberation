@@ -13,10 +13,10 @@
     Or not, just don't try!
 */
 FOB_typename = "Land_vn_hootch_02_03";                                  // This is the main FOB HQ building.
-FOB_box_typename = "B_Slingload_01_Cargo_F";                            // This is the FOB as a container. (Land_vn_cargo20_military_green_f could be usable when it is slingloadable.
+FOB_box_typename = "vn_us_komex_medium_02";                             // This is the FOB as a container.
 FOB_truck_typename = "vn_b_wheeled_m54_03";                             // This is the FOB as a vehicle.
 Arsenal_typename = "Land_vn_us_weapons_stack2";                         // This is the virtual arsenal as portable supply crates.
-Respawn_truck_typename = "vn_b_wheeled_m54_01_airport";                 // This is the mobile respawn (and medical) truck. (Not medical or optimal but at least less emersion breaking that HEMTT)
+Respawn_truck_typename = "vn_b_armor_m577_02";                          // This is the mobile respawn (and medical) truck.
 huron_typename = "vn_b_air_ch34_01_01";                                 // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
 crewman_classname = "vn_b_men_army_14";                                 // This defines the crew for vehicles.
 pilot_classname = "vn_b_men_aircrew_05";                                // This defines the pilot for helicopters.
@@ -26,7 +26,7 @@ KP_liberation_truck_classname = "vn_b_wheeled_m54_01";                  // These
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";     // A small storage area for resources. (Land_vn_hootch_01_wall)
 KP_liberation_large_storage_building = "ContainmentArea_01_sand_F";     // A large storage area for resources. (Land_vn_barracks_04_wall)
 KP_liberation_recycle_building = "Land_vn_hootch_01_03";                // The building defined to unlock FOB recycling functionality.
-KP_liberation_air_vehicle_building = "Land_vn_radar_small_f";           // The building defined to unlock FOB air vehicle functionality.
+KP_liberation_air_vehicle_building = "Land_vn_mobileradar_01_radar_F"; // The building defined to unlock FOB air vehicle functionality.
 KP_liberation_heli_slot_building = "Land_vn_b_helipad_01";              // The helipad used to increase the GLOBAL rotary-wing cap.
 KP_liberation_plane_slot_building = "Land_vn_usaf_hangar_02";           // The hangar used to increase the GLOBAL fixed-wing cap.
 KP_liberation_supply_crate = "Land_FoodSacks_01_cargo_brown_F";         // This defines the supply crates, as in resources.
@@ -42,22 +42,22 @@ KP_liberation_fuel_crate = "CargoNet_01_barrels_F";                     // This 
     IMPORTANT: The last element inside each array must have no comma at the end!
 */
 infantry_units = [
-    ["vn_b_men_army_09",5,0,0],                                        // Rifleman (Light)
-    ["vn_b_men_army_15",5,0,0],                                        // Rifleman
-    ["vn_b_men_army_12",30,0,0],                                        // Rifleman (AT)
-    ["vn_b_men_army_07",25,0,0],                                        // Grenadier
-    ["vn_b_men_army_06",25,0,0],                                        // Autorifleman
-    ["vn_b_men_army_10",30,0,0],                                        // Marksman
-    ["vn_b_men_army_11",40,0,0],                                        // Sharpshooter
-    ["vn_b_men_army_03",30,0,0],                                        // Combat Life Saver
-    ["vn_b_men_army_04",30,0,0],                                        // Engineer
-    ["vn_b_men_army_05",30,0,0],                                        // Explosives Specialist
-    ["vn_b_men_sf_04",10,0,0],                                          // Recon Scout
-    ["vn_b_men_sf_21",10,0,0],                                          // Recon Marksman
-    ["vn_b_men_sf_02",10,0,0],                                          // Recon Paramedic
-    ["vn_b_men_sf_03",10,0,0],                                          // Recon Demolition Expert
-    ["vn_b_men_sf_11",15,0,0],                                          // Recon Grenadier
-    ["vn_b_men_sf_05",10,0,0],                                          // Recon Machinegunner
+    ["vn_b_men_army_09",15,0,0],                                        // Rifleman (Light)
+    ["vn_b_men_army_15",15,0,0],                                        // Rifleman
+    ["vn_b_men_army_12",20,5,0],                                        // Rifleman (AT)
+    ["vn_b_men_army_07",20,0,0],                                        // Grenadier
+    ["vn_b_men_army_06",20,0,0],                                        // Autorifleman
+    ["vn_b_men_army_10",20,0,0],                                        // Marksman
+    ["vn_b_men_army_11",20,0,0],                                        // Sharpshooter
+    ["vn_b_men_army_03",20,0,0],                                        // Combat Life Saver
+    ["vn_b_men_army_04",20,0,0],                                        // Engineer
+    ["vn_b_men_army_05",20,0,0],                                        // Explosives Specialist
+    ["vn_b_men_sf_04",25,0,0],                                          // Recon Scout
+    ["vn_b_men_sf_21",25,0,0],                                          // Recon Marksman
+    ["vn_b_men_sf_02",25,0,0],                                          // Recon Paramedic
+    ["vn_b_men_sf_03",25,0,0],                                          // Recon Demolition Expert
+    ["vn_b_men_sf_11",25,0,0],                                          // Recon Grenadier
+    ["vn_b_men_sf_05",25,0,0],                                          // Recon Machinegunner
     ["vn_b_men_army_13",10,0,0],                                        // Crewman
     ["vn_b_men_army_16",20,0,0],                                        // Para Trooper
     ["vn_b_men_aircrew_06",10,0,0],                                     // Helicopter Crew
@@ -131,7 +131,11 @@ air_vehicles = [
     ["vn_b_air_f100d_cap",450,350,800],
     ["vn_b_air_f4c_at",750,500,1000],                                  // F-4C Phantom II (AT)
     ["vn_b_air_f4c_cas",750,500,1000],                                 // F-4C Phantom II (CAS)
-    ["vn_b_air_f4c_cap",750,500,1000]                                  // F-4C Phantom II (CAP)
+    ["vn_b_air_f4c_cap",750,500,1000],                                 // F-4C Phantom II (CAP)
+    ["vnx_b_air_ac119_01_01",400,300,600],                             // AC-119K (SOG Nickel Steel Submod)
+    ["vnx_b_air_ac119_04_01",400,1000,600],                            // C-119 Bomber (SOG Nickel Steel Submod)
+    ["vnx_b_air_ac119_03_01",400,0,600],                               // C-119 Cargo (SOG Nickel Steel Submod)
+    ["vnx_b_air_ac119_02_01",400,0,600]                                 // C-119 Transport (SOG Nickel Steel Submod)
 ];
 
 static_vehicles = [
@@ -279,6 +283,13 @@ buildings = [
     ["Land_PortableLight_double_F",0,0,0],
     ["Land_PortableLight_single_F",0,0,0],
     ["Lantern_01_black_F",0,0,0],
+    ["Land_vn_us_common_lantern_01",0,0,0],
+    ["Land_vn_lampshabby_f_dir_close",0,0,0],
+    ["Land_vn_lampshabby_f_dir_far",0,0,0],
+    ["Land_vn_lampshabby_f_dir_normal",0,0,0],
+    ["Land_vn_lampshabby_f_4xdir_close",0,0,0],
+    ["Land_vn_lampshabby_f_4xdir_far",0,0,0],
+    ["Land_vn_lampshabby_f_4xdir_normal",0,0,0],
     ["vn_b_prop_fmradio_01",0,0,0],
     ["vn_bar_01_campchair_01",0,0,0],
     ["vn_flag_101stab",0,0,0],
@@ -409,6 +420,7 @@ blufor_squad_para = [
 elite_vehicles = [
     "vn_b_armor_m48_01_01",
     "vn_b_armor_m67_01_01",
+    "SPE_M4A1_T34_Calliope",
     "vn_b_air_f4c_at",
     "vn_b_air_f4c_cas",
     "vn_b_air_f4c_cap",
