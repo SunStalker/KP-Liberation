@@ -26,7 +26,7 @@ KP_liberation_truck_classname = "vn_b_wheeled_m54_01";                  // These
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";     // A small storage area for resources. (Land_vn_hootch_01_wall)
 KP_liberation_large_storage_building = "ContainmentArea_01_sand_F";     // A large storage area for resources. (Land_vn_barracks_04_wall)
 KP_liberation_recycle_building = "Land_vn_hootch_01_03";                // The building defined to unlock FOB recycling functionality.
-KP_liberation_air_vehicle_building = "Land_vn_mobileradar_01_radar_F"; // The building defined to unlock FOB air vehicle functionality.
+KP_liberation_air_vehicle_building = "Land_vn_mobileradar_01_radar_F";  // The building defined to unlock FOB air vehicle functionality.
 KP_liberation_heli_slot_building = "Land_vn_b_helipad_01";              // The helipad used to increase the GLOBAL rotary-wing cap.
 KP_liberation_plane_slot_building = "Land_vn_usaf_hangar_02";           // The hangar used to increase the GLOBAL fixed-wing cap.
 KP_liberation_supply_crate = "Land_FoodSacks_01_cargo_brown_F";         // This defines the supply crates, as in resources.
@@ -62,100 +62,100 @@ infantry_units = [
     ["vn_b_men_army_16",20,0,0],                                        // Para Trooper
     ["vn_b_men_aircrew_06",10,0,0],                                     // Helicopter Crew
     ["vn_b_men_aircrew_05",10,0,0],                                     // Helicopter Pilot
-    ["vn_b_men_jetpilot_01",10,0,0],                                     // Pilot
-    ["vn_b_men_seal_30",15,0,0],
-    ["vn_b_men_seal_32",15,0,0],
-    ["vn_b_men_seal_36",15,0,0]
+    ["vn_b_men_jetpilot_01",10,0,0],                                    // Pilot
+    ["vn_b_men_seal_30",15,0,0],                                        // Diver 3
+    ["vn_b_men_seal_32",15,0,0],                                        // Diver 5
+    ["vn_b_men_seal_36",15,0,0]                                         // Diver 9
 ];
 
 light_vehicles = [
-    ["vn_c_bicycle_01",10,0,0],                                         // Bicycle
-    ["vn_b_wheeled_m151_01",25,0,50],                                   // M151A1 Transport
-    ["vn_b_wheeled_m151_mg_02",25,25,50],                               // M151A1 M2
-    ["vn_b_wheeled_m151_mg_03",25,30,50],                               // M151A1 Patrol
-    ["vn_b_wheeled_m151_mg_06",25,100,50],
-    ["vn_b_wheeled_m151_mg_04",30,5,50],                               // M151A1 Armoured
-    ["vn_b_wheeled_m151_02",25,0,50],                                   // M151A1 Transport (Covered)
-    ["vn_b_wheeled_m151_mg_05",25,100,50],
-    ["vn_b_wheeled_m54_mg_01",75,50,100],                               // M54 Gun Truck (3x M2HB)
-    ["vn_b_wheeled_m54_mg_03",75,60,100],                               // M54 Gun Truck (Minigun)
-    ["vn_b_wheeled_m54_mg_02",75,100,100],                              // M54 (M45 Quad)
-    ["vn_b_wheeled_m54_01",75,0,75],                                   // M54 Transport
-    ["vn_b_wheeled_m54_02",75,0,75],                                   // M54 Transport (Covered)
-    ["vn_b_boat_10_01",25,25,35],
-    ["vn_b_boat_11_01",25,35,35],
-    ["vn_b_boat_12_01",35,50,50],
-    ["vn_b_boat_13_01",35,75,50],
+    ["vn_c_bicycle_01",0,0,0],                                          // Bicycle
+    ["vn_b_wheeled_m151_01",10,0,25],                                   // M151A1 Transport
+    ["vn_b_wheeled_m151_02",10,0,25],                                   // M151A1 Transport (Covered)
+    ["vn_b_wheeled_m151_mg_02",10,35,25],                               // M151A1 M2
+    ["vn_b_wheeled_m151_mg_03",10,45,25],                               // M151A1 Patrol
+    ["vn_b_wheeled_m151_mg_06",10,110,25],                              // M151A1 M40A1
+    ["vn_b_wheeled_m151_mg_04",15,25,25],                               // M151A1 Armoured
+    ["vn_b_wheeled_m151_mg_05",10,150,25],                              // M151A1 TOW
+    ["vn_b_wheeled_m54_mg_01",50,80,50],                                // M54 Gun Truck (3x M2HB)
+    ["vn_b_wheeled_m54_mg_03",50,80,50],                                // M54 Gun Truck (Minigun)
+    ["vn_b_wheeled_m54_mg_02",50,100,50],                               // M55 AA Truck
+    ["vn_b_wheeled_m54_01",50,0,50],                                    // M54 Transport
+    ["vn_b_wheeled_m54_02",50,0,50],                                    // M54 Transport (Covered)
+    ["vn_b_boat_10_01",25,25,35],                                       // STAB (M2)
+    ["vn_b_boat_11_01",25,35,35],                                       // STAB (Mk18)
+    ["vn_b_boat_12_01",35,50,50],                                       // PBR MkII (M60, Red, Clean)
+    ["vn_b_boat_13_01",35,75,50],                                       // PBR MkII (Mk18, Red, Clean)
     ["vn_b_boat_05_01",75,100,75],                                      // PTF Nasty (Mortar)
-    ["vn_b_boat_06_01",75,125,75]
+    ["vn_b_boat_06_01",75,125,75]                                       // PTR Nasty (40mm)
 ];
 
 heavy_vehicles = [
-    ["vn_b_armor_m113_acav_04",100,40,125],
-    ["vn_b_armor_m113_acav_02",100,40,125],
-    ["vn_b_armor_m113_acav_01",100,40,125],
-    ["vn_b_armor_m113_acav_06",100,125,125],
-    ["vn_b_armor_m113_acav_05",100,60,125],
-    ["vn_b_armor_m125_01",100,175,125],
-    ["vn_b_armor_m132_01",100,100,125],
-    ["SPE_M4A1_75",300,250,300],
-    ["SPE_M18_Hellcat",150,300,250],
-    ["vn_b_armor_m41_01_01",200,400,250],                                // M41A3 Walker Bulldog
-    ["vn_b_armor_m48_01_01",400,400,500],
-    ["vn_b_armor_m67_01_01",400,200,600],
-    ["SPE_M4A1_T34_Calliope",300,1500,300]
+    ["vn_b_armor_m113_acav_04",100,60,75],                             // M113A1 ACAV (M134)
+    ["vn_b_armor_m113_acav_02",100,60,75],                             // M113A1 ACAV (M1919)
+    ["vn_b_armor_m113_acav_01",100,60,75],                             // M113A1 ACAV (M2)
+    ["vn_b_armor_m113_acav_06",100,125,75],                            // M113A1 ACAV (M2/M40)
+    ["vn_b_armor_m113_acav_05",100,75,75],                             // M113A1 ACAV (Mk18)
+    ["vn_b_armor_m125_01",100,175,75],                                 // M125A1 M29 Mortar
+    ["vn_b_armor_m132_01",100,100,125],                                 // M132A1 Flamethrower
+    ["SPE_M4A1_75",250,350,300],                                        // M4A1 Sherman (Spearhead DLC)
+    ["SPE_M18_Hellcat",150,400,250],                                    // M18 Hellcat (Spearhead DLC)
+    ["vn_b_armor_m41_01_01",200,450,250],                               // M41A3 Walker Bulldog
+    ["vn_b_armor_m48_01_01",400,600,400],                               // M48 Patton
+    ["vn_b_armor_m67_01_01",400,200,600],                               // M67 Flame Tank
+    ["SPE_M4A1_T34_Calliope",300,1500,300]                              // M4A1 T34 Calliope (Spearhead DLC)
 ];
 
 air_vehicles = [
-    ["vn_b_air_oh6a_01",100,5,100],                                    // OH-6A Cayuse
-    ["vn_b_air_oh6a_06",150,150,200],                                   // OH-6A Cayuse (Gunship/APERS)
-    ["vn_b_air_oh6a_05",150,150,200],                                   // OH-6A Cayuse (Gunship/CAS)
-    ["vn_b_air_ch34_03_01",200,10,250],                                 // UH-34D Seahorse (M60 x2)
-    ["vn_b_air_ch34_04_03",200,200,250],                                // UH-34 Stinger (APERS)
-    ["vn_b_air_ch34_04_02",200,200,250],                                // UH-34 Stinger (CAS)
-    ["vn_b_air_uh1d_02_01",125,10,125],                                 // UH-1D Iroquois Slick (Army)
-    ["vn_b_air_uh1c_03_01",200,150,250],
-    ["vn_b_air_uh1c_01_01",200,150,250],                                // UH-1C Iroquois Hog (Army)
-    ["vn_b_air_uh1c_06_01",200,150,250],
-    ["vn_b_air_uh1c_05_01",200,150,250],
-    ["vn_b_air_uh1e_02_04",225,200,250],
-    ["vn_b_air_ch47_03_01",250,0,300],
-    ["vn_b_air_ch47_01_01",250,10,300],
-    ["vn_b_air_ach47_04_01",350,300,400],
-    ["vn_b_air_ach47_03_01",350,300,400],
-    ["vn_b_air_ah1g_02",300,350,600],                                   // AH-1G Cobra (APERS)
-    ["vn_b_air_ah1g_03",300,350,600],                                   // AH-1G Cobra (AT)
-    ["vn_b_air_ah1g_09",300,350,600],
-    ["vn_b_air_f100d_hcas",450,350,800],
-    ["vn_b_air_f100d_hbmb",450,350,800],
-    ["vn_b_air_f100d_cap",450,350,800],
-    ["vn_b_air_f4c_at",750,500,1000],                                  // F-4C Phantom II (AT)
-    ["vn_b_air_f4c_cas",750,500,1000],                                 // F-4C Phantom II (CAS)
-    ["vn_b_air_f4c_cap",750,500,1000],                                 // F-4C Phantom II (CAP)
-    ["vnx_b_air_ac119_01_01",400,300,600],                             // AC-119K (SOG Nickel Steel Submod)
-    ["vnx_b_air_ac119_04_01",400,1000,600],                            // C-119 Bomber (SOG Nickel Steel Submod)
-    ["vnx_b_air_ac119_03_01",400,0,600],                               // C-119 Cargo (SOG Nickel Steel Submod)
+    ["vn_b_air_oh6a_01",100,5,100],                                     // OH-6A Cayuse
+    ["vn_b_air_oh6a_06",100,150,100],                                   // OH-6A Cayuse (Gunship/APERS)
+    ["vn_b_air_oh6a_05",100,150,100],                                   // OH-6A Cayuse (Gunship/CAS)
+    ["vn_b_air_ch34_03_01",150,10,250],                                 // UH-34D Seahorse (M60 x2)
+    ["vn_b_air_ch34_04_03",125,250,250],                                // UH-34 Stinger (APERS)
+    ["vn_b_air_ch34_04_02",125,250,250],                                // UH-34 Stinger (CAS)
+    ["vn_b_air_uh1d_02_01",200,10,225],                                 // UH-1D Iroquois Slick (Army)
+    ["vn_b_air_uh1c_03_01",150,200,225],                                // UH-1P Iroquois Hornet
+    ["vn_b_air_uh1c_01_01",150,225,225],                                // UH-1C Iroquois Hog (Army)
+    ["vn_b_air_uh1c_06_01",150,200,225],                                // UH-1C Iroquois ARA (Army)
+    ["vn_b_air_uh1c_05_01",150,250,225],                                // UH-1C Iroquois Heavy Hog (Army)
+    ["vn_b_air_uh1e_02_04",150,300,225],                                // UH-1E Iroquois Heavy Gunship
+    ["vn_b_air_ch47_03_01",250,0,300],                                  // CH-47A Chinook (Cargo/Army)
+    ["vn_b_air_ch47_01_01",250,10,300],                                 // CH-47A Chinook (M60/Army)
+    ["vn_b_air_ach47_04_01",200,400,300],                               // ACH-47A Guns-A-Go-Go (APERS)
+    ["vn_b_air_ach47_03_01",200,400,300],                               // ACH-47A Guns-A-Go-Go (AT)
+    ["vn_b_air_ah1g_02",300,750,400],                                   // AH-1G Cobra (APERS)
+    ["vn_b_air_ah1g_03",300,750,400],                                   // AH-1G Cobra (AT)
+    ["vn_b_air_ah1g_09",300,750,400],                                   // AH-1G Cobra (M195/CAS)
+    ["vn_b_air_f100d_hcas",550,1000,800],                                // F-100D (HCAS)
+    ["vn_b_air_f100d_hbmb",550,1000,800],                                // F-100D (HBMB)
+    ["vn_b_air_f100d_cap",550,1000,800],                                 // F-100D (CAP)
+    ["vn_b_air_f4c_at",750,1200,1000],                                   // F-4C Phantom II (AT)
+    ["vn_b_air_f4c_cas",750,1200,1000],                                  // F-4C Phantom II (CAS)
+    ["vn_b_air_f4c_cap",750,1200,1000],                                  // F-4C Phantom II (CAP)
+    ["vnx_b_air_ac119_01_01",400,300,600],                              // AC-119K (SOG Nickel Steel Submod)
+    ["vnx_b_air_ac119_04_01",400,1500,600],                             // C-119 Bomber (SOG Nickel Steel Submod)
+    ["vnx_b_air_ac119_03_01",400,0,600],                                // C-119 Cargo (SOG Nickel Steel Submod)
     ["vnx_b_air_ac119_02_01",400,0,600]                                 // C-119 Transport (SOG Nickel Steel Submod)
 ];
 
 static_vehicles = [
-    ["vn_b_army_static_m60_high",5,5,0],                              // M60 (High)
-    ["vn_b_army_static_m60_low",5,5,0],                               // M60 (Low)
-    ["vn_b_army_static_m1919a4_high",5,5,0],                          // M-1919A4 .30cal (High)
-    ["vn_b_army_static_m1919a4_low",5,5,0],                           // M-1919A4 .30cal (Low)
-    ["vn_b_army_static_m1919a6",5,5,0],                               // M-1919A6 .30cal
-    ["vn_b_army_static_m2_high",5,10,0],                               // M-2HB .50cal (High)
-    ["vn_b_army_static_m2_low",5,10,0],                                // M-2HB .50cal (Low)
+    ["vn_b_army_static_m60_high",5,5,0],                                // M60 (High)
+    ["vn_b_army_static_m60_low",5,5,0],                                 // M60 (Low)
+    ["vn_b_army_static_m1919a4_high",5,5,0],                            // M-1919A4 .30cal (High)
+    ["vn_b_army_static_m1919a4_low",5,5,0],                             // M-1919A4 .30cal (Low)
+    ["vn_b_army_static_m1919a6",5,5,0],                                 // M-1919A6 .30cal
+    ["vn_b_army_static_m2_high",5,10,0],                                // M-2HB .50cal (High)
+    ["vn_b_army_static_m2_low",5,10,0],                                 // M-2HB .50cal (Low)
     ["vn_b_army_static_mortar_m2",10,30,0],                             // M2 60mm Mortar
-    ["vn_b_army_static_mortar_m29",10,40,0],                           // M29 81mm Mortar
-    ["vn_b_army_static_m45",25,40,0],                                  // M-45 Quadmount
-    ["vn_b_navy_static_l70mk2",45,20,0],
-    ["vn_b_navy_static_l60mk3",75,75,0],
-    ["vn_b_army_static_m40a1rr",35,50,0],
-    ["SPE_57mm_M1",35,50,0],
-    ["vn_b_army_static_m101",50,75,0],                                 // M101 105mm Howitzer
+    ["vn_b_army_static_mortar_m29",10,40,0],                            // M29 81mm Mortar
+    ["vn_b_army_static_m45",25,40,0],                                   // M-45 Quadmount
+    ["vn_b_navy_static_l70mk2",45,20,0],                                // L/70 Mk2 20mm Autocannon
+    ["vn_b_navy_static_l60mk3",75,75,0],                                // L/60 Mk3 40mm Autocannon
+    ["vn_b_army_static_m40a1rr",35,50,0],                               // M40A1 Recoilless Rifle
+    ["SPE_57mm_M1",35,50,0],                                            // M1 57mm AT Gun (Spearhead DLC)
+    ["vn_b_army_static_m101",50,75,0],                                  // M101 105mm Howitzer
     ["vn_b_static_tow",30,75,0],                                        // BGM71 TOW
-    ["vn_b_army_static_m101_02",50,850,0]
+    ["vn_b_army_static_m101_02",50,1000,0]                              // M101 105mm Howitzer
 ];
 
 buildings = [
@@ -259,7 +259,6 @@ buildings = [
     ["Land_vn_hootch_02",0,0,0],
     ["Land_vn_latrine_01",0,0,0],
     ["Land_vn_mobileradar_01_generator_f",0,0,0],
-    ["Land_vn_mobileradar_01_radar_f",0,0,0],
     ["Land_vn_sandbagbarricade_01_f",0,0,0],
     ["Land_vn_sandbagbarricade_01_half_f",0,0,0],
     ["Land_vn_sandbagbarricade_01_hole_f",0,0,0],
@@ -308,7 +307,7 @@ buildings = [
 ];
 
 support_vehicles = [
-    [Arsenal_typename,100,200,0],
+    [Arsenal_typename,50,200,0],
     [Respawn_truck_typename,200,0,100],
     [FOB_box_typename,300,500,0],
     [FOB_truck_typename,300,500,75],
@@ -424,12 +423,14 @@ elite_vehicles = [
     "vn_b_air_f4c_at",
     "vn_b_air_f4c_cas",
     "vn_b_air_f4c_cap",
+    "vn_b_air_ah1g_09",
     "vn_b_air_ah1g_05",
     "vn_b_air_ah1g_04",
     "vn_b_air_ah1g_03",
     "vn_b_air_ah1g_02",
     "vn_b_air_ah1g_01",
-    "vn_b_air_f100d_at",
+    "vn_b_air_f100d_hcas",
     "vn_b_air_f100d_cap",
-    "vn_b_air_f100d_cas"
+    "vn_b_air_f100d_hbmb",
+    "vnx_b_air_ac119_04_01"
 ];

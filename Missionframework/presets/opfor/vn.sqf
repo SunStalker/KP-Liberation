@@ -61,6 +61,7 @@ militia_squad = [
     "vn_o_men_nva_13",
     "vn_o_men_nva_05",
     "vn_o_men_nva_14",
+    "vn_o_men_nva_43",
     "vn_o_men_nva_43"
 ];
 
@@ -69,12 +70,14 @@ militia_vehicles = [
     "vn_o_wheeled_btr40_mg_01",
     "vn_o_armor_btr50pk_01",
     "vn_o_wheeled_btr40_mg_04",
-    "vn_o_wheeled_z157_mg_01"
+    "vn_o_wheeled_z157_mg_01",
+    "vn_o_wheeled_btr40_mg_05"
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
 opfor_vehicles = [
     "vn_o_wheeled_btr40_mg_03",
+    "vn_o_wheeled_btr40_mg_05",
     "vn_o_wheeled_btr40_mg_03",
     "vn_o_pt76b_01",
     "vn_o_armor_m113_acav_01",
@@ -101,6 +104,7 @@ opfor_vehicles_low_intensity = [
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles = [
     "vn_o_wheeled_btr40_mg_03",
+    "vn_o_wheeled_btr40_mg_05",
     "vn_o_armor_type63_01",
     "vn_o_armor_btr50pk_02",
     "vn_o_wheeled_z157_mg_02",
@@ -128,7 +132,9 @@ opfor_battlegroup_vehicles = [
     "vn_o_air_mi2_05_03",
     "vn_o_wheeled_btr40_01",
     "vn_o_wheeled_z157_01",
-    "vo_o_armor_m125_01"
+    "vo_o_armor_m125_01",
+    "vn_o_wheeled_z157_01",
+    "vn_o_wheeled_btr40_01"
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
