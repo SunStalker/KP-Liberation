@@ -155,7 +155,22 @@ GRLIB_arsenal_weapons = [
 	"vn_m1carbine_shorty",
 	"vn_l4",
 	"vn_mg42",
-	"vn_m20a1b1_01"
+	"vn_m20a1b1_01",
+    "vn_kbkg",
+    "vn_kbkg_gl",
+    "vn_ak_01",
+    "vn_xm177_m203",
+    "vn_xm177_m203_camo",
+    "vn_f1_smg",
+    "vn_f1_smg_bayo",
+    "vn_m16_usaf",
+    "vn_xm16e1",
+    "vn_xm16e1_xm148",
+    "vn_m16_m203",
+    "vn_m16_m203_camo",
+    "vn_gau5a",
+    "vn_xm177e1",
+    "vn_xm177e1_camo"
 ];
 
 GRLIB_arsenal_magazines = [
@@ -350,9 +365,13 @@ GRLIB_arsenal_magazines = [
 	"vn_mg42_50_mag",
 	"vn_mg42_50_t_mag",
 	"vn_m20a1b1_heat_mag",
-	"vn_m20a1b1_wp_mag"
-		
-	
+	"vn_m20a1b1_wp_mag",
+    "vn_kbkg_mag",
+    "vn_kbkg_t_mag",
+    "vn_20mm_f1n60_frag_mag",
+    "vn_20mm_kgn_frag_mag",
+    "vn_20mm_pgn60_heat_mag",
+    "vn_20mm_dgn_wp_mag"	
 ];
 
 GRLIB_arsenal_items = [

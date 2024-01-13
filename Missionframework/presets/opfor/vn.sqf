@@ -34,7 +34,7 @@ opfor_ammobox_transport = "vn_o_wheeled_z157_02";
 opfor_fuel_truck = "vn_o_wheeled_z157_fuel";
 opfor_ammo_truck = "vn_o_wheeled_z157_ammo";
 opfor_fuel_container = "Land_vn_b_prop_fueldrum_02";
-opfor_ammo_container = "B_Slingload_01_Ammo_F";
+opfor_ammo_container = "Land_vn_ruvehicleammo";
 opfor_flag = "vn_flag_pavn";
 
 /* Adding a value to these arrays below will add them to a one out of however many in the array, random pick chance.
@@ -99,15 +99,14 @@ opfor_vehicles_low_intensity = [
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles = [
     "vn_o_wheeled_btr40_mg_03",
-    "vn_o_armor_type63_01_nva65",
-    "vn_o_armor_ot54_02",
+    "vn_o_armor_type63_01",
     "vn_o_armor_btr50pk_02",
     "vn_o_wheeled_z157_mg_02",
     "vn_o_pt76b_01",
     "vn_o_pt76a_01",
     "vn_o_pt76b_01",
     "vn_o_pt76a_01",
-    "vn_o_armor_ot54_02",
+    "vn_o_armor_ot54_01",
     "vn_o_armor_btr50pk_02",
     "vn_o_wheeled_z157_mg_02",
     "vn_o_pt76b_01",
@@ -115,14 +114,13 @@ opfor_battlegroup_vehicles = [
     "vn_o_pt76b_01",
     "vn_o_pt76a_01",
     "vn_o_wheeled_btr40_mg_03",
-    "vn_o_armor_type63_01_nva65",
-    "vn_o_armor_type63_01_nva65",
+    "vn_o_armor_type63_01",
+    "vn_o_armor_type63_01",
     "vn_o_armor_t54b_01",
     "vn_o_armor_t54b_01",
-    "vn_o_armor_ot54_02",
+    "vn_o_armor_ot54_01",
     "vn_o_wheeled_btr40_mg_03",
     "vn_o_armor_type63_01_nva65",
-    "vn_o_armor_ot54_02",
     "vn_o_wheeled_btr40_mg_03",
     "vn_o_air_mi2_04_05",
     "vn_o_air_mi2_04_02",
@@ -141,7 +139,7 @@ opfor_battlegroup_vehicles_low_intensity = [
     "vn_o_wheeled_btr40_mg_01",
     "vn_o_armor_btr50pk_02",
     "vn_o_armor_btr50pk_02",
-    "vn_o_armor_ot54_02",
+    "vn_o_armor_ot54_01",
     "vn_o_wheeled_btr40_mg_03",
     "vn_o_wheeled_btr40_mg_03",
     "vn_o_wheeled_btr40_mg_05",
