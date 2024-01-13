@@ -1,4 +1,3 @@
-DATA HOSTED WITH ♥ BY PASTEBIN.COM - DOWNLOAD RAW - SEE ORIGINAL
 #define US_FORCES items[] = \
 { \
         "vn_m14_mag", 40, \
