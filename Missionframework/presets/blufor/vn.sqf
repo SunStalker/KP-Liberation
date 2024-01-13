@@ -73,21 +73,21 @@ light_vehicles = [
     ["vn_b_wheeled_m151_01",25,0,50],                                   // M151A1 Transport
     ["vn_b_wheeled_m151_mg_02",25,25,50],                               // M151A1 M2
     ["vn_b_wheeled_m151_mg_03",25,30,50],                               // M151A1 Patrol
-    ["vn_b_wheeled_m151_mg_06",25,100,50],
+    ["vn_b_wheeled_m151_mg_06",25,100,50],                              // M151A1 m40a1 rr
     ["vn_b_wheeled_m151_mg_04",30,5,50],                               // M151A1 Armoured
     ["vn_b_wheeled_m151_02",25,0,50],                                   // M151A1 Transport (Covered)
-    ["vn_b_wheeled_m151_mg_05",25,100,50],
+    ["vn_b_wheeled_m151_mg_05",25,100,50],                              // M151A1 TOW
     ["vn_b_wheeled_m54_mg_01",75,50,100],                               // M54 Gun Truck (3x M2HB)
     ["vn_b_wheeled_m54_mg_03",75,60,100],                               // M54 Gun Truck (Minigun)
     ["vn_b_wheeled_m54_mg_02",75,100,100],                              // M54 (M45 Quad)
     ["vn_b_wheeled_m54_01",75,0,75],                                   // M54 Transport
     ["vn_b_wheeled_m54_02",75,0,75],                                   // M54 Transport (Covered)
-    ["vn_b_boat_10_01",25,25,35],
-    ["vn_b_boat_11_01",25,35,35],
-    ["vn_b_boat_12_01",35,50,50],
-    ["vn_b_boat_13_01",35,75,50],
+    ["vn_b_boat_10_01",25,25,35],                                       // STAB (M2)
+    ["vn_b_boat_11_01",25,35,35],                                       // STAB (Mk18)
+    ["vn_b_boat_12_01",35,50,50],                                       // PBR MkII (M60, Red, Clean)
+    ["vn_b_boat_13_01",35,75,50],                                       // PBR MkII (Mk18, Red, Clean)
     ["vn_b_boat_05_01",75,100,75],                                      // PTF Nasty (Mortar)
-    ["vn_b_boat_06_01",75,125,75]
+    ["vn_b_boat_06_01",75,125,75]                                      // PTR Nasty (40mm)
 ];
 
 heavy_vehicles = [
@@ -136,7 +136,11 @@ air_vehicles = [
     ["vn_b_air_f100d_cap",450,200,800],                                 // E100d (CAP) 4x Sidewinder-sAA
     ["vn_b_air_f4c_at",750,500,1000],                                  // F-4C Phantom II (AT)
     ["vn_b_air_f4c_cas",750,500,1000],                                 // F-4C Phantom II (CAS)
-    ["vn_b_air_f4c_cap",750,500,1000]                                  // F-4C Phantom II (CAP)
+    ["vn_b_air_f4c_cap",750,500,1000],                                  // F-4C Phantom II (CAP)
+    ["vnx_b_air_ac119_01_01",400,300,600],                              // AC-119K (SOG Nickel Steel Submod)
+    ["vnx_b_air_ac119_04_01",400,1500,600],                             // C-119 Bomber (SOG Nickel Steel Submod)
+    ["vnx_b_air_ac119_03_01",400,0,600],                                // C-119 Cargo (SOG Nickel Steel Submod)
+    ["vnx_b_air_ac119_02_01",400,0,600]                                 // C-119 Transport (SOG Nickel Steel Submod)
 ];
 
 static_vehicles = [
@@ -157,9 +161,9 @@ static_vehicles = [
     ["vn_b_navy_static_l60mk3",75,75,0],
     ["vn_b_army_static_m40a1rr",35,50,0],
     ["SPE_57mm_M1",35,50,0],
-    ["vn_b_army_static_m101_01",50,75,0],                                 // M101 105mm Howitzer
+    ["vn_b_army_static_m101_01",50,75,0],                                 // M101 105mm AT
     ["vn_b_static_tow",30,75,0],                                        // BGM71 TOW
-    ["vn_b_army_static_m101_02",50,85,0]
+    ["vn_b_army_static_m101_02",50,850,0]
 ];
 
 buildings = [
@@ -447,6 +451,7 @@ elite_vehicles = [
     "vn_b_air_f4c_cap",
     "vn_b_air_ah1g_05",
     "vn_b_air_ah1g_04",
+    "vn_b_air_ah1g_09",
     "vn_b_air_ah1g_03",
     "vn_b_air_ah1g_02",
     "vn_b_air_ah1g_01",
@@ -454,5 +459,6 @@ elite_vehicles = [
     "vn_b_air_f100d_cap",
     "vn_b_air_f100d_cas",
     "vn_b_air_f100d_hcas",
-	"vn_b_air_f100d_hbmb"
+	"vn_b_air_f100d_hbmb",
+    "vnx_b_air_ac119_04_01"
 ];
