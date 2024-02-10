@@ -1332,7 +1332,7 @@ class vn_logistics
 	};
 	class item_data
 		{
-		//Building supplies crate
+		//Building supplies crate && kp lip ammo
 		class vn_b_ammobox_supply_05
 		{
 			item_weight = 200;
@@ -1341,6 +1341,10 @@ class vn_logistics
 			rotation_offset = 0;
 		};
 
+                // kp lip fuel and kp lip supply
+                class CargoNet_01_barrels_F : vn_b_ammobox_supply_05 {};
+                class Land_FoodSacks_01_cargo_brown_F : vn_b_ammobox_supply_05 {};
+                
 		//Building supplies container
 		class Land_Cargo10_brick_red_F
 		{
